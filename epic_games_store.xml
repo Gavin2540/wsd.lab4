@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="epic_games_store.xsl"?>
+<!DOCTYPE EpicGamesStore [
+    <!ELEMENT EpicGamesStore (Game+)> 
+    <!ELEMENT Game (Title, ReleaseDate, Platform, Players, Publisher, Playtime)> 
+    <!ATTLIST Game id ID #REQUIRED> 
+    <!ELEMENT Title (#PCDATA)> 
+    <!ELEMENT ReleaseDate (#PCDATA)> 
+    <!ELEMENT Platform (#PCDATA)> 
+    <!ELEMENT Players (#PCDATA)> 
+    <!ELEMENT Publisher (#PCDATA)> 
+    <!ELEMENT Playtime (#PCDATA)> 
+]>
+<EpicGamesStore> 
+    <Game id="G001"> 
+        <Title>Fortnite</Title> 
+        <ReleaseDate>2017-07-21</ReleaseDate> 
+        <Platform>PC, Console</Platform> 
+        <Players>350000000</Players> 
+        <Publisher>Epic Games</Publisher> 
+        <Playtime>500</Playtime> 
+    </Game> 
+    <Game id="G002"> 
+        <Title>Rocket League</Title> 
+        <ReleaseDate>2015-07-07</ReleaseDate> 
+        <Platform>PC, Console</Platform> 
+        <Players>100000000</Players> 
+        <Publisher>Psyonix</Publisher> 
+        <Playtime>200</Playtime> 
+    </Game> 
+</EpicGamesStore>
